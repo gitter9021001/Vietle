@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import GuessSquare from '../component/guessSquare/guessSquare.js'
 
 function GameScreen({ navigation }) {
   return (
@@ -34,7 +35,8 @@ function GameScreen({ navigation }) {
 		</View>
 		
 		<View style={{flex: 3, alignItems: 'center', justifyContent: 'center'}}>
-			<Text>Guess Board goes here</Text>
+			<Text>Guess Board goes here {"\n"}</Text>
+			<GuessSquare />
 		</View>
 		
 		<View style={{flex: 1}}>
